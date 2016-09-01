@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{90D900F6-2121-E58F-F4D9-F1FB773DFA9E}") = "Multiplayer Setup", "Assembly-CSharp-firstpass.csproj", "{CF0D081D-DC40-B99A-F9CC-147AB76F71C0}"
+EndProject
+Project("{90D900F6-2121-E58F-F4D9-F1FB773DFA9E}") = "Multiplayer Setup", "Assembly-CSharp-Editor.csproj", "{7DF8B0B8-184F-D3D7-6470-B2C9EB798F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF0D081D-DC40-B99A-F9CC-147AB76F71C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0D081D-DC40-B99A-F9CC-147AB76F71C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0D081D-DC40-B99A-F9CC-147AB76F71C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0D081D-DC40-B99A-F9CC-147AB76F71C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF8B0B8-184F-D3D7-6470-B2C9EB798F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF8B0B8-184F-D3D7-6470-B2C9EB798F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF8B0B8-184F-D3D7-6470-B2C9EB798F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF8B0B8-184F-D3D7-6470-B2C9EB798F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
