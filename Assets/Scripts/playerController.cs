@@ -8,6 +8,9 @@ namespace S3
 
 	public class playerController : NetworkBehaviour {
 
+		public GameObject bulletPrefab;
+		public Transform bulletSpawn;
+
 		// Use this for initialization
 		void Start () {
 			if (isLocalPlayer) {
@@ -30,6 +33,22 @@ namespace S3
 			transform.Rotate (0, x, 0);
 			transform.Translate (0, 0, y);
 		
+			// Fires a bullet when the spacebar is pressed
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				Fire ();
+			}
+		
+		}
+
+		void Fire() {
+			// Creates the bullet from the prefab
+			GameObject bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+
+			// Adds velocity to the bullet
+			bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6.0f;
+
+			// Destroy the bullet after 2 seconds
+			Destroy(bullet, 2);
 		}
 
 //		public override void onStartLocalPlayer(){
