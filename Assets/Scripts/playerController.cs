@@ -10,7 +10,9 @@ namespace S3
 
 		// Use this for initialization
 		void Start () {
-
+			if (isLocalPlayer) {
+					GetComponent<MeshRenderer> ().material.color = Color.blue;
+				}
 
 		
 		}
@@ -29,5 +31,11 @@ namespace S3
 			transform.Translate (0, 0, y);
 		
 		}
+
+//		public override void onStartLocalPlayer(){
+		//void onStartLocalPlayer(){
+		//	GetComponent<MeshRenderer> ().material.color = Color.blue;
+		//}
 	}
 }
+
